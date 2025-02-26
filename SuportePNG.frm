@@ -1,20 +1,37 @@
 VERSION 5.00
 Begin VB.Form SuportePNG 
-   BackColor       =   &H80000007&
+   BackColor       =   &H00FFFFFF&
    Caption         =   "Suporte PNG - VB6"
-   ClientHeight    =   5460
+   ClientHeight    =   8550
    ClientLeft      =   60
    ClientTop       =   405
-   ClientWidth     =   8325
+   ClientWidth     =   12960
    LinkTopic       =   "Form1"
-   ScaleHeight     =   5460
-   ScaleWidth      =   8325
+   ScaleHeight     =   8550
+   ScaleWidth      =   12960
    StartUpPosition =   3  'Windows Default
-   Begin VB.Image imgTeste 
-      Height          =   2895
-      Left            =   1680
-      Top             =   1200
-      Width           =   4695
+   Begin VB.Frame Frame1 
+      Appearance      =   0  'Flat
+      BackColor       =   &H00C0C0C0&
+      BorderStyle     =   0  'None
+      ForeColor       =   &H80000008&
+      Height          =   8535
+      Left            =   6240
+      TabIndex        =   0
+      Top             =   0
+      Width           =   6735
+      Begin VB.Image imgTeste 
+         Height          =   1695
+         Left            =   0
+         Top             =   480
+         Width           =   2775
+      End
+   End
+   Begin VB.Image imgTeste2 
+      Height          =   1095
+      Left            =   0
+      Top             =   480
+      Width           =   1575
    End
 End
 Attribute VB_Name = "SuportePNG"
@@ -32,5 +49,8 @@ End Sub
 Private Sub Form_Load()
 
    LoadPNG imgTeste, "C:\Projects\VB6\SuportePNG\vb6.png"
+   LoadPNG imgTeste2, "C:\Projects\VB6\SuportePNG\vb6.png"
+
 
 End Sub
+

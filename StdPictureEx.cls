@@ -13,7 +13,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 '========================================================================================================
 ' Class purpose and usage
-'========================================================================================================
+'=======================================================================================================
 ' The class is defined as predeclared. This means you do not create an instance of it. An instance is
 '   created automatically when your project is run, similar to a .bas module. You do not unload it or set
 '   it to Nothing. You can access its properties/methods directly by its name, i.e., StdPictureEx.LoadPicture
