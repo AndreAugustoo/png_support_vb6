@@ -31,7 +31,6 @@ Public Sub LoadPNG(ByRef P_ComponenteImagem As Image, P_CaminhoImagem As String)
     Set P_ComponenteImagem.Picture = StdPictureExInstance.LoadPicture(P_CaminhoImagem)
 End Sub
 
-```vb
 Private Sub Form_Load()
     LoadPNG imgTeste, "C:\Projects\VB6\SuportePNG\vb6.png"
     LoadPNG imgTeste2, "C:\Projects\VB6\SuportePNG\vb6.png"
